@@ -10,13 +10,13 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" alt="Logo">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Logo">
       </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="prices.html">Прайс-лист</a></li>
-        <li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <a class="login" href="login.html" >Вход</a>
@@ -62,11 +62,13 @@
 
     <section class="gallery">
       <h2>Фотогалерея</h2>
-      <a href="#" >
-        <img src="img/studio.png" alt="Интерьер студии">
-      </a>
-      <button class="gallery-button-back">Назад</button>
-      <button class="gallery-button-next">Вперед</button>
+      <figure class="gallery-content">
+        <a href="#">
+            <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
+        </a>
+      </figure>
+      <span class="button gallery-button gallery-button-back">Назад</span>
+      <span class="button gallery-button gallery-button-next">Вперед</span>
     </section>
 
     <section class="contacts">
@@ -87,7 +89,7 @@
 
     <section class="appointment">
       <h2>Записаться</h2>
-      <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+      <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
       <!---Здесь будет форма-->
     </section>
   </main>
@@ -102,12 +104,12 @@
     <div class="footer-social">
       <p>Давайте дружить!</p>
       <ul>
-        <li><a href="vk.com">Vkontakte</a></li>
-        <li><a href="facebook.com">Facebook</a></li>
-        <li><a href="instagram.com">Instagram</a></li>
+        <li><a class="social-button" href="vk.com">Vkontakte</a></li>
+        <li><a class="social-button" href="facebook.com">Facebook</a></li>
+        <li><a  class="social-button" href="instagram.com">Instagram</a></li>
       </ul>
     </div>
-    <p>
+    <p class="footer-copyright">
       <p>Разработано:</p>
       <a class="button" href="htmlacademy.ru">HTML Academy</a>
     </p>
