@@ -15,6 +15,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  line-height: 18px;
+  color: #000;
+
+  background-color: #f8f3f0;
+  background-image: url("../img/bg-light.png");
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -195,4 +204,117 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+/* Inner pages */
+
+.header-logo {
+  background-color: #000;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000;
+}
+
+.breadcrumbs a:hover {
+  color: #663d15;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.catalog-item-price b,
+.product-price b {
+  background-color: #e5e5e5;
+}
+
+/* Catalog */
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter .filter-option {
+  list-style: none;
+}
+
+.filter-option:hover,
+.filter-option:focus {
+  color: #663d15;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #fff;
+}
+
+.catalog-item h3 {
+  color: #000;
+}
+
+.catalog-item h3:hover,
+.catalog-item h3:focus {
+  color: #663d15;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #fff;
+  background-color: #000;
+}
+
+.pagination-item a:focus,
+.pagination-item a:hover {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000;
+  background-color: #fff;
+}
+
+.pagination-item-current a:focus,
+.pagination-item-current a:hover {
+  background-color: #fff;
+}
+
+/* Catalog item */
+
+.product-photo-preview {
+  list-style: none;
+}
+
+.product-info {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-article {
+  color: #aeaeae;
 }
