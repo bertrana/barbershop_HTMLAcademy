@@ -29,6 +29,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font: inherit;
 
@@ -74,23 +97,28 @@ a {
 .main-navigation .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  height: 72px;
+  /* align-items: center; */
 }
 
-.main-header-logo{
-  margin: 0 auto;
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
 }
 
 .site-navigation,
 .user-navigation {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  vertical-align: middle;
   color: #fff;
 }
 
@@ -99,6 +127,43 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+}
+
+.user-navigation {
+  display: flex;
+  max-width: 140px;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 27px;
+  left: 24px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.login-link:hover:before,
+.login-link:focus:before,
+.login-link:active:before {
+  opacity: 1;
+}
+
+.main-header-logo{
+  margin: 0 auto;
 }
 
 .features-list {
@@ -117,8 +182,29 @@ a {
 }
 
 .feature-item h3 {
+  margin: 0;
+  margin-bottom: 60px;
+
+  position: relative;
+
   font-size: 30px;
   line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #fff;
+  
+  transform: rotate(45deg);
 }
 
 .index-columns {
@@ -166,6 +252,7 @@ a {
 }
 
 .gallery-content {
+  height: 164px;
   margin: 0;
   margin-bottom: 38px;
 
@@ -174,8 +261,8 @@ a {
 }
 
 .gallery-container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  height: 260px;
 }
 
 .gallery-button {
@@ -357,6 +444,7 @@ a {
 
 .restore {
   margin-left: auto;
+  
   color: #000;
   text-decoration: underline;
 }
