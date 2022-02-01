@@ -747,12 +747,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat, repeat;
 }
 
-.catalog-item-price b,
-.product-price b {
-  text-align: center;
-  background-color: #e5e5e5;
-}
-
 /* Catalog */
 
 .catalog-columns {
@@ -932,6 +926,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  background-color: #e5e5e5;
 }
 
 .catalog-item-price .button {
@@ -987,22 +982,129 @@ input[type="radio"].visually-hidden {
 
 /* Catalog item */
 
+.product-columns {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product-photos {
+  width: 460px;
+}
+
+.product-photo-big {
+  width: 460px;
+  height: 498px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 .product-photo-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.product-photo-preview li {
+  width: 140px;
+  height: 149px;
+  margin-right: 20px;
+
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-big:hover,
+.product-photo-big:focus,
+.product-photo-preview li:hover,
+.product-photo-preview li:focus {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-photo-preview li:nth-child(3n) {
+  margin-right: 0;
+}
+
 .product-info {
+  margin-top: 25px;
+  width: 390px;
+
   font-size: 14px;
   line-height: 24px;
 }
 
+.product-info p {
+  margin: 0;
+}
+
+.product-info .info-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.product-info .product-description {
+  margin-bottom: 35px;
+}
+
+.product-info .product-price {
+  display: flex;
+  margin-bottom: 65px;
+}
+
+.product-price b {
+  padding: 10px 36px;
+
+  background-color: #e5e5e5;
+}
+
+.product-price .button {
+  margin-right: 0;
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
+
 .product-info h3 {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .product-info ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.product-includes-list li{
+  margin-left: 23px;
+
+  position: relative;
+}
+
+.product-includes-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -20px;
+
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+
+  background-color: #000;
 }
 
 .product-article {
